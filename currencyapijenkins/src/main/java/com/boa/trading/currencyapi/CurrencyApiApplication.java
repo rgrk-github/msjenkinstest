@@ -11,7 +11,6 @@ public class CurrencyApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CurrencyApiApplication.class, args);
-	}
-	//Just test github and Jenkins
+	}	
 
 }
