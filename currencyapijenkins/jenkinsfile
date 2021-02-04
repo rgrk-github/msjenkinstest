@@ -14,7 +14,7 @@ pipeline{
        
           bat "mvn -f ./currencyapijenkins clean install -DskipTests"
           bat "docker build -f currencyapijenkins/dockerfile -t currencyapijenkinsv1 ./currencyapijenkins"
-          bat "docker run -p 7090:7078 --name hsbc-c2 --link hsbc-mysql:mysql -d currencyapijenkinsv1:latest"                
+          bat "docker run -p 7090:7078 --name virtusa-c2 --link virtusa-mysql:mysql -d currencyapijenkinsv1:latest"                
        }
    
    }
